@@ -10,7 +10,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/test31
     username: postgres
     password: 123
-    driver-class-name: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver  # Исправлено
   jpa:
      hibernate:
        ddl-auto: update
