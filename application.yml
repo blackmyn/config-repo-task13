@@ -1,0 +1,6 @@
+server:
+  port: 8080
+message: "default config"
+my:
+  shared:
+    property: "Shared value"
