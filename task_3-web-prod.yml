@@ -1,0 +1,20 @@
+server:
+  port: 8082
+message: "PROD config"
+my:
+  prod:
+    property: "Prod"
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test31
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+     hibernate:
+       ddl-auto: update
+     properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          show_sql: true
