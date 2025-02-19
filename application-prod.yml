@@ -6,7 +6,7 @@ my:
     property: "Prod"
   spring:
     datasource:
-      url: jdbc:postgresql://localhost:5432/test31_dev
+      url: jdbc:postgresql://localhost:5432/test31
       username: postgres
       password: 123
       driver-class-name: org.postgresql.Driver
