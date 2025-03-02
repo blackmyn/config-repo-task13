@@ -11,6 +11,24 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         show_sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 332992138196-9havmvn4qov82t04g8emma3arv8rs3e7.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope:
+              - profile
+              - email
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+            token-uri: https://www.googleapis.com/oauth2/v4/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+            user-name-attribute: sub
 ehcache:
   config: classpath:ehcache.xml
 logging:
