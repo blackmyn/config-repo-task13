@@ -1,5 +1,5 @@
-server:
-  port: 8081
-
-app:
-  feature: enabled
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 0
